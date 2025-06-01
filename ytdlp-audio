@@ -1,0 +1,11 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+url=$(termux-clipboard-get)
+[ -z "$url" ] && exit 1
+
+download_dir="$HOME/storage/music/Downloads"
+[ -d "$download_dir" ] || mkdir -p "$download_dir"
+cd "$download_dir"
+
+termux-toast -g top "Stating download for $url"
+yt-dlp -x --embed-metadata --embed-thumbnail "$url"

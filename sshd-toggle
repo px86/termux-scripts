@@ -1,0 +1,11 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+if pgrep -x sshd; then
+  echo "terminating sshd..."
+  termux-toast -g top "terminating sshd..."
+  killall sshd
+else
+  echo "starting sshd..."
+  termux-toast -g top "starting sshd..."
+  sshd
+fi
