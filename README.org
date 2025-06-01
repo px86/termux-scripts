@@ -5,5 +5,5 @@ My collection of shell scripts that I run in termux on my android phone.
 
 * One line description of the scripts
 
-[[./sshd-toggle][sshd-toggle]] - start/stop ssh daemon
-[[./ytdlp-audio][ytdlp-audio]] - download audio only from the link in the clipboard
++ [[./sshd-toggle][sshd-toggle]] - start/stop ssh daemon
++ [[./ytdlp-audio][ytdlp-audio]] - download audio only from the link in the clipboard
